@@ -1,92 +1,21 @@
-# Gemini [![Build Status](https://github.com/anishathalye/gemini/workflows/CI/badge.svg)](https://github.com/anishathalye/gemini/actions?query=workflow%3ACI)
+# Gemini Theme with Eurecom Colors
 
-Gemini is a modern LaTeX [beamerposter] theme.
+## Project Origin
+This project originates from the [Gemini theme](https://github.com/anishathalye/gemini) created by Anish Athalye. The Gemini theme is designed for academic posters, providing a clean and professional look. This version has been customized to incorporate the official colors of Eurecom, a renowned research institute in the fields of communication systems and digital sciences.
 
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini-small.png">
-</a>
-</p>
+## Eurecom Theme Colors
+The Eurecom theme uses a specific color palette that aligns with the institute's branding guidelines. The primary colors used in the theme are:
 
-If you're looking for a beamer presentation theme, take a look at [Auriga].
+1. **Eurecom Navy Blue**: This is a deep, authoritative blue (RGB: 0, 70, 130) that serves as the primary color for titles, headings, and separators.
+2. **Eurecom Light Blue**: A softer, more approachable blue (RGB: 100, 143, 255) used for backgrounds and highlights.
+3. **Pantone 2995 C**: A vibrant blue (RGB: 0, 159, 223) used as a primary highlight color.
+4. **Light Gray**: A neutral background color (RGB: 230, 230, 230) that complements the blue tones and ensures readability.
+5. **100% Cyan**: Another variant of vibrant blue (RGB: 0, 159, 223) used for specific highlights.
+6. **Light Orange**: A subtle, contrasting color (RGB: 255, 242, 232) used in alert blocks for important information.
 
-## Dependencies
+These colors are carefully chosen to maintain a professional and clean appearance while aligning with Eurecom's visual identity.
 
-* A TeX installation that includes [LuaTeX]
-    * You also need `latexmk` if you want to use the provided `Makefile`
-* LaTeX package dependencies including beamerposter (these usually come with
-  your TeX installation, but if not, you can get them from [CTAN])
-* [Raleway] and [Lato], which are both available under Open Font License
+## Example Poster
+Below is an example of a poster created using this theme. The poster demonstrates how the colors and layout come together to create a visually appealing and informative presentation.
 
-## Usage
-
-1. Copy the files in this repository (or clone the repository)
-
-1. In `poster.tex`, set up your paper size, column layout, and scale the
-   content as necessary
-
-1. Make a copy of `beamercolorthemegemini.sty`, update the `\usecolortheme`
-   line in `poster.tex`, and theme the poster to your liking (optional, but
-   highly recommended)
-
-1. Run `make` to build your poster
-
-## FAQ
-
-See the [FAQ] in the Wiki for answers to frequently asked questions such as how
-to add an institution logo to the poster.
-
-## Themes
-
-Gemini currently includes three color themes:
-
-* `gemini` (default)
-* `mit`
-* `labsix`
-
-The alternative themes are intended to be inspiration for you to make your own
-color theme. You're highly recommended to make your own color theme (it's
-really easy!) or use the default Gemini theme.
-
-### MIT theme
-
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-mit.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-mit-small.png">
-</a>
-</p>
-
-### LabSix theme
-
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-labsix.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-labsix-small.png">
-</a>
-</p>
-
-## Design goals
-
-* **Minimal**: clean and easy to read, so that the emphasis is on the content
-* **Batteries included**: works and looks good out of the box
-* **Easy theming**: easy to create and use a new color theme
-
-## Contributing
-
-Contributions to Gemini such as bug reports, new themes, and new poster
-components are greatly appreciated! Given the subjective nature of design,
-you're encouraged to open an issue or pull request early to get feedback before
-investing a lot of time in implementing a new feature.
-
-## License
-
-Copyright (c) Anish Athalye. Released under the MIT License. See
-[LICENSE.md][license] for details.
-
-[beamerposter]: https://github.com/deselaers/latex-beamerposter
-[Auriga]: https://github.com/anishathalye/auriga
-[LuaTeX]: http://www.luatex.org/
-[CTAN]: https://ctan.org/
-[Raleway]: https://www.fontsquirrel.com/fonts/raleway
-[Lato]: https://www.fontsquirrel.com/fonts/lato
-[license]: LICENSE.md
-[FAQ]: https://github.com/anishathalye/gemini/wiki/FAQ
+![Example Poster](poster.pdf)
