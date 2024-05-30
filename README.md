@@ -18,4 +18,4 @@ These colors are carefully chosen to maintain a professional and clean appearanc
 ## Example Poster
 Below is an example of a poster created using this theme. The poster demonstrates how the colors and layout come together to create a visually appealing and informative presentation.
 
-![Example Poster](poster.pdf)
+![Example Poster](poster.png)
