@@ -11,8 +11,9 @@
 \usepackage{lmodern}
 \usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
 \usetheme{gemini}
-\usecolortheme{gemini}
+\usecolortheme{eurecom}
 \usepackage{graphicx}
+\usepackage{epstopdf}  % Include the epstopdf package
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -56,9 +57,11 @@
 % Logo (optional)
 % ====================
 
-% use this to include logos on the left and/or right side of the header:
-% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
-% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+% Include Eurecom logo on the right side of the header
+\logoright{\includegraphics[height=7cm]{./logos/EURECOM_logo_quadri.eps}}
+% Include Lab logo on the left side of the header
+
+\logoleft{\includegraphics[height=7cm]{./logos/s3logo.png}}
 
 % ====================
 % Body
@@ -72,7 +75,7 @@
 
 \begin{column}{\colwidth}
 
-  \begin{block}{A block title}
+  \begin{block}{A Block Title}
 
     Some block contents, followed by a diagram, followed by a dummy paragraph.
 
@@ -94,7 +97,7 @@
 
   \end{block}
 
-  \begin{block}{A block containing a list}
+  \begin{block}{A Block Containing a List}
 
     Nam vulputate nunc felis, non condimentum lacus porta ultrices. Nullam sed
     sagittis metus. Etiam consectetur gravida urna quis suscipit.
@@ -109,10 +112,9 @@
 
   \end{block}
 
-  \begin{alertblock}{A highlighted block}
+  \begin{alertblock}{A Highlighted Block}
 
-    This block catches your eye, so \textbf{important stuff} should probably go
-    here.
+    This block catches your eye, so \textbf{important stuff} should probably go here.
 
     Curabitur eu libero vehicula, cursus est fringilla, luctus est. Morbi
     consectetur mauris quam, at finibus elit auctor ac. Aliquam erat volutpat.
@@ -140,7 +142,7 @@
 
 \begin{column}{\colwidth}
 
-  \begin{block}{A block containing an enumerated list}
+  \begin{block}{A Block Containing an Enumerated List}
 
     Vivamus congue volutpat elit non semper. Praesent molestie nec erat ac
     interdum. In quis suscipit erat. \textbf{Phasellus mauris felis, molestie
@@ -163,7 +165,7 @@
 
   \end{block}
 
-  \begin{block}{Fusce aliquam magna velit}
+  \begin{block}{Fusce Aliquam Magna Velit}
 
     Et rutrum ex euismod vel. Pellentesque ultricies, velit in fermentum
     vestibulum, lectus nisi pretium nibh, sit amet aliquam lectus augue vel
@@ -191,7 +193,7 @@
 
   \end{block}
 
-  \begin{block}{Nam cursus consequat egestas}
+  \begin{block}{Nam Cursus Consequat Egestas}
 
     Nulla eget sem quam. Ut aliquam volutpat nisi vestibulum convallis. Nunc a
     lectus et eros facilisis hendrerit eu non urna. Interdum et malesuada fames
@@ -210,8 +212,7 @@
       \item \textbf{Sed consequat} id ante vel efficitur. Praesent congue massa
         sed est scelerisque, elementum mollis augue iaculis.
         \begin{itemize}
-          \item In sed est finibus, vulputate
-            nunc gravida, pulvinar lorem. In maximus nunc dolor, sed auctor eros
+          \item In sed est finibus, vulputate nunc gravida, pulvinar lorem. In maximus nunc dolor, sed auctor eros
             porttitor quis.
           \item Fusce ornare dignissim nisi. Nam sit amet risus vel lacus
             tempor tincidunt eu a arcu.
@@ -232,7 +233,7 @@
 
 \begin{column}{\colwidth}
 
-  \begin{exampleblock}{A highlighted block containing some math}
+  \begin{exampleblock}{A Highlighted Block Containing Some Math}
 
     A different kind of highlighted block.
 
@@ -244,14 +245,14 @@
     faucibus. Cras eleifend dolor eu nulla suscipit suscipit. Sed lobortis non
     felis id vulputate.
 
-    \heading{A heading inside a block}
+    \heading{A Heading Inside a Block}
 
     Praesent consectetur mi $x^2 + y^2$ metus, nec vestibulum justo viverra
     nec. Proin eget nulla pretium, egestas magna aliquam, mollis neque. Vivamus
     dictum $\mathbf{u}^\intercal\mathbf{v}$ sagittis odio, vel porta erat
     congue sed. Maecenas ut dolor quis arcu auctor porttitor.
 
-    \heading{Another heading inside a block}
+    \heading{Another Heading Inside a Block}
 
     Sed augue erat, scelerisque a purus ultricies, placerat porttitor neque.
     Donec $P(y \mid x)$ fermentum consectetur $\nabla_x P(y \mid x)$ sapien
@@ -260,7 +261,7 @@
 
   \end{exampleblock}
 
-  \begin{block}{Nullam vel erat at velit convallis laoreet}
+  \begin{block}{Nullam Vel Erat at Velit Convallis Laoreet}
 
     Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
     inceptos himenaeos. Phasellus libero enim, gravida sed erat sit amet,
@@ -270,7 +271,7 @@
       \centering
       \begin{tabular}{l r r c}
         \toprule
-        \textbf{First column} & \textbf{Second column} & \textbf{Third column} & \textbf{Fourth} \\
+        \textbf{First Column} & \textbf{Second Column} & \textbf{Third Column} & \textbf{Fourth} \\
         \midrule
         Foo & 13.37 & 384,394 & $\alpha$ \\
         Bar & 2.17 & 1,392 & $\beta$ \\
